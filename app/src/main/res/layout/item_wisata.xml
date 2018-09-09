@@ -28,7 +28,18 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="2dp"
-                android:text="Komplek Tugu Muda, Jl.Pemuda, Sekayu, Semarang Tengah, Kota Semarang, Jawa Tengah, 50132, Indonesia"
+                android:text="Komplek Tugu Muda"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Jl.Pemuda, Sekayu, Semarang Tengah, Kota Semarang, Jawa Tengah, 50132, Indonesia"
                 android:textSize="12sp" />
         </LinearLayout>
     </android.support.v7.widget.CardView>

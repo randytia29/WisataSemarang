@@ -1,7 +1,6 @@
 package com.randy.wisatasemarang.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,6 +46,14 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.WisataView
     @Override
     public void onBindViewHolder(WisataAdapter.WisataViewHolder holder, int position) {
         String linkGambar = listWisata.get(position).getGambarWisata();
-        Glide.with(context).load("")
+        Glide.with(context).load("https://drive.google.com/thumbnail?id=" + linkGambar).into(holder.ivItemGambarWisata);
+
+        holder.tvItemNamaWisata.setText(listWisata.get(position).getNamaWisata());
+        holder.tvItemAlamatWisata.setText(listWisata.get(position).getAlamatWisata());
+    }
+
+    @Override
+    public int getItemCount() {
+        return listWisata.size();
     }
 }
